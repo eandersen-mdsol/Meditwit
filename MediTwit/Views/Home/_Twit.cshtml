@@ -1,0 +1,10 @@
+﻿@model MediTwit.Models.Twit
+           
+<div class="twit">
+    @Html.Gravatar(Model.User.EmailAddress, 45)
+
+    <strong>@Model.User.FullName</strong>
+    <small>@Model.CreatedAt</small>
+    <p>@Model.TwitContent</p>
+
+</div>
